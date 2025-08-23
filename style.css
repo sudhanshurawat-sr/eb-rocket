@@ -6,14 +6,25 @@
 
 body {
     text-transform: capitalize;
-    font-family:  sans-serif;
-    background-color:#12141D;
-    color: white; 
+    font-family: sans-serif;
+    /* background-color: #12141D; */
+    /* color: white; */
     /* background-image: linear-gradient(  130deg in lch, black 25%, rgb(0, 183, 255), rgb(0, 106, 227) ); */
 
 
 }
 
+::selection {
+    background: #D2FF28;
+    color: black;
+}
+
+.upperscreen {
+    background-color: #12141D;
+    height: 1390px;
+    color: white;
+
+}
 
 .nav-left,
 .logo {
@@ -29,13 +40,16 @@ a {
 .navigation {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    align-items: center;
+    padding: 20px;
     gap: 100px;
 
-    
+
     min-height: 12vh;
+
     color: white;
-   
+
+
 
 
 
@@ -47,10 +61,12 @@ a {
     /* padding: 15px; */
     margin: 15px;
     color: aliceblue;
-    font-size: 20px;
-    
+    font-size: 16px;
+
+
 }
-.mid-choose{
+
+.mid-choose {
     border: none;
     background: transparent;
     color: white;
@@ -59,14 +75,15 @@ a {
     cursor: pointer;
     transition: 700ms ease;
 }
+
 .mid-option {
     color: black;
 }
 
 .nav-right a {
 
-    
-    border-radius:50px ;
+
+    border-radius: 50px;
     width: 200.188px;
     height: 49px;
     color: black;
@@ -88,81 +105,286 @@ a {
     Height: 32.2656px;
     Border-Radius: 0px;
 }
-.top{
+
+.top {
     display: flex;
     justify-content: center;
     margin-top: 80px;
     gap: 5px;
-   font-weight: bold(600);
+    font-weight: bold(600);
 }
-.top-text{
+
+.top-text {
     font-size: 20px;
     text-transform: uppercase;
     align-content: center;
-    
+
 }
-.hero-row-middle-heading{
+
+.hero-row-middle-heading {
     font-size: 67px;
+    justify-self: center;
     justify-items: center;
     font-weight: bold;
-    Line-Height:81.6px;
+    Line-Height: 81.6px;
     margin-top: 20px;
-    
-    
+    width: 70vw;
+
+
 }
-.lower-para{
+
+.customize {
+    background-color: white;
+    color: black;
+    border-radius: 3px 0 0 3px;
+    display: flex;
+    font-size: 16px;
+    line-height: 27.2px;
+    width: 134.938px;
+    height: 48px;
+    font-weight: 500;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    margin-top: -50px;
+    position: fixed;
+    /* position: sticky; */
+
+    top: 35%;
+    left: 90%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 5px 15px rgba(0, 0, 0, 0.1);
+    right: -135px;
+    transition: right 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1000;
+    animation: slide 800ms forwards 400ms;
+    
+
+
+
+
+}
+
+@keyframes slide{
+    0% {
+        right: -135px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+
+
+
+
+.customize img {
+    width: 20px;
+    height: 20px;
+}
+
+.lower-para {
 
     justify-items: center;
     line-height: 21px;
-     margin-top: 30px;
-     line-height: 27.9px;
-     font-size: 19px;
-     letter-spacing:normal;
+    margin-top: 20px;
+    line-height: 27.9px;
+    font-size: 19px;
+    letter-spacing: normal;
+    width: 70vw;
+    justify-self: center;
+}
+
+.book-meeting {
+    background-color: #D2FF28;
+    Width: 168.312px;
+    Height: 46px;
+    Border-Radius: 50px;
+    display: flex;
+    justify-self: center;
+    text-transform: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+
 
 }
-.book-meeting{
-background-color:#B0E600;
- Width:168.312px;
-Height:46px;
-Border-Radius:50px;
-display: flex;
-justify-self: center;
 
-justify-content: center;
-align-items: center;
-margin-top: 40px;
-
-
-
-}
-.book-meeting a{
+.book-meeting a {
     color: black;
     display: flex;
-    
-}
-.back-container{
- width: 75vw;
-border-radius: 30px;
-margin-top: 40px;
-
-display: flex;
-justify-self: center;
-/* border:2px solid white; */
-background-color: rgb(57,59,81);
-
-
-
-
+    /* line-height: 10px; */
 
 }
-.back-container img{
-    width: 74.6vw;  
+
+.back-container {
+    width: 75vw;
+    border-radius: 30px;
+    margin-top: 50px;
+
+    display: flex;
+    justify-self: center;
+    /* border:2px solid white; */
+    background-color: rgb(57, 59, 81);
+
+
+
+
+
+}
+
+.back-container img {
+    width: 74.6vw;
     border-radius: 35px;
     padding: 10px;
     display: flex;
     justify-self: center;
-    
+
 
 
 }
 
+.footer-element {
+    /* border:1px solid red; */
+    width: 75vw;
+    height: 13vh;
+    display: flex;
+    margin-top: 44px;
+    justify-self: center;
+    font-size: 55px;
+    gap: 20px;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.middle-site {
+    display: flex;
+    /* border: 2px solid red; */
+    margin-top: 80px;
+    width: 74vw;
+    height: 48vh;
+    justify-self: center;
+}
+
+.left-box {
+    font-family: sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    width: 55%;
+}
+
+.left-box p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: sans-serif;
+    color: #393B51;
+    line-height: 30px;
+    text-transform: none;
+}
+
+.right-box {
+    width: 50%;
+
+
+
+}
+
+.right-box img {
+    width: 100%;
+    height: 46vh;
+    border-radius: 30px;
+
+}
+
+.know-left {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    margin-top: 70px;
+    width: 11vw;
+    border-radius: 30px;
+    height: 50px;
+}
+
+.know-left a {
+    color: #393B51;
+    font-size: 13px;
+    align-content: center;
+
+}
+
+.lower-middle-icons {
+    border-top: 1px solid black;
+    display: flex;
+    margin-top: 60px;
+    width: 74vw;
+    height: 162.984px;
+    justify-self: center;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.left-lower-icon {
+    /* border: 1px solid red; */
+    Width: 386.656px;
+    Height: 91.9922px;
+    display: flex;
+    align-content: end;
+
+}
+
+.scopebox {
+    /* border: 1px solid blue; */
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #69727d17;
+
+}
+
+.left-lower-icon img {
+    width: 34px;
+    height: 34px;
+
+}
+
+.seventytwo {
+    Width: 17.9375px;
+    Height: 30.7969px;
+    font-size: 44px;
+    margin-left: 10px;
+    font-weight: 600;
+    line-height: 52px;
+
+
+}
+
+.hour {
+    display: flex;
+    align-self: flex-end;
+    margin-left: -15px;
+    height: 27.1875px;
+    color: #393B51;
+    font-size: 16px;
+    line-height: 27px;
+
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+
+.sudhanshu {
+    Width: 100%;
+    Height: 1130.75px;
+    background-color: #69727d17;
+    margin-top: 100px;
+
+}
