@@ -138,10 +138,10 @@ a {
     color: black;
     border-radius: 3px 0 0 3px;
     display: flex;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 27.2px;
-    width: 134.938px;
-    height: 48px;
+    width: 120.938px;
+    height: 43px;
     font-weight: 500;
     gap: 5px;
     justify-content: center;
@@ -173,6 +173,11 @@ a {
     100% {
         right: 0;
     }
+}
+.customize:hover{
+    color: royalblue;
+
+    cursor: pointer;
 }
 
 
@@ -500,7 +505,7 @@ a {
 
 .black-screen {
     Width: 100%;
-    Height: 1650px;
+    Height: 1600px;
     background-color: #110B11;
     color: white;
 
@@ -510,7 +515,7 @@ a {
 
 .middle-black-container {
     border: 1px solid #110B11;
-    height: 1650px;
+    height: 1600px;
     width: 75vw;
     justify-self: center;
 
@@ -639,4 +644,14 @@ a {
     align-items: center;
     margin-top: -50px;
 
+}
+.viewstudies:hover{
+    background-color: #B0E600;
+    color: #110B11;
+    font-weight: 500;
+    border: 1px solid #B0E600;
+    transition: 300ms ease-in-out;
+   Width: 188.148px;
+    Height: 44.5px;
+    cursor: pointer;
 }
